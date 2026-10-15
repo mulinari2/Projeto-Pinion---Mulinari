@@ -1,0 +1,452 @@
+[
+  {
+    "id": "1",
+    "pergunta": "Qual ferramenta você recomenda para automatizar tarefas repetitivas em uma pequena empresa?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Para uma pequena empresa, eu começaria mapeando as tarefas repetitivas e avaliando integrações existentes. A Acme pode ser uma opção para fluxos simples, enquanto a Zenith tende a fazer mais sentido quando há necessidade de personalização. Compare custos, suporte e facilidade de manutenção antes de decidir.",
+    "data_hora": "2026-10-01T09:15:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "2",
+    "pergunta": "Como posso organizar melhor os dados de vendas de uma loja virtual?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "Centralize pedidos, clientes, pagamentos e estoque em uma estrutura consistente. Uma planilha pode servir no início, mas um banco de dados ajuda quando o volume cresce. Também vale criar indicadores de conversão, ticket médio e recompra.",
+    "data_hora": "2026-10-01T09:22:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "3",
+    "pergunta": "Acme, Zenith ou Nimbus: qual plataforma é mais indicada para uma equipe pequena?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Não existe uma vencedora universal. A Acme pode atender bem a fluxos diretos, a Zenith pode ser mais adequada para integrações complexas e a Nimbus merece ser avaliada se a equipe prioriza colaboração. Faça um teste com um processo real antes de contratar.",
+    "data_hora": "2026-10-01T09:31:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "4",
+    "pergunta": "Qual é a melhor maneira de começar a aprender SQL?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Aprenda SELECT, WHERE, ORDER BY e funções de agregação primeiro. Depois pratique JOINs e subconsultas com um conjunto de dados pequeno. SQLite é uma boa opção para começar porque não exige configurar um servidor.",
+    "data_hora": "2026-10-01T09:45:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "5",
+    "pergunta": "Quais serviços podem ajudar a monitorar menções de marcas em respostas de IA?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Você pode construir uma solução própria que armazene respostas, detecte menções e calcule a frequência por plataforma. Ao comparar fornecedores como Acme e Nimbus, defina primeiro quais fontes, marcas e métricas são relevantes para seu negócio.",
+    "data_hora": "2026-10-01T10:03:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "6",
+    "pergunta": "Como reduzir erros em uma automação feita com Python e Playwright?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Use seletores estáveis, esperas explícitas, logs e tratamento de exceções. Separe a lógica em funções pequenas e crie testes para os cenários mais comuns. Também registre capturas de tela quando uma etapa crítica falhar.",
+    "data_hora": "2026-10-01T10:11:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "7",
+    "pergunta": "A Zenith é melhor que a Acme para integrar sistemas internos?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "A resposta depende dos conectores disponíveis, dos limites de API, da segurança e da experiência da equipe. Compare a Zenith e a Acme usando os mesmos casos de teste e verifique se ambas suportam autenticação, retentativas e monitoramento.",
+    "data_hora": "2026-10-01T10:19:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "8",
+    "pergunta": "Como escolher um notebook para programação?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Priorize pelo menos 16 GB de RAM, um SSD e um processador recente. Se você pretende usar containers, máquinas virtuais ou ferramentas de dados, 32 GB de RAM podem trazer mais conforto. Considere também teclado, tela e possibilidade de upgrade.",
+    "data_hora": "2026-10-01T10:27:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "9",
+    "pergunta": "Quero automatizar relatórios semanais. Por onde começo?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Liste as fontes de dados, defina as métricas e documente como o relatório é produzido hoje. Depois automatize a extração, valide os resultados e programe a execução. A Acme e a Nimbus são exemplos de opções que poderiam ser comparadas caso você esteja avaliando plataformas prontas.",
+    "data_hora": "2026-10-01T10:34:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "10",
+    "pergunta": "O que é ETL e quando devo usar esse padrão?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "ETL significa extrair dados de fontes, transformá-los e carregá-los em um destino. É útil quando dados de sistemas diferentes precisam ser padronizados antes da análise. Para fluxos maiores, considere agendamento, observabilidade, tratamento de falhas e idempotência.",
+    "data_hora": "2026-10-01T10:41:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "11",
+    "pergunta": "Qual ferramenta tem o melhor suporte para fluxos com várias integrações?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "A Zenith se destaca nesta comparação fictícia por oferecer uma variedade de conectores, mas isso não substitui uma avaliação técnica. Verifique autenticação, limites de uso, logs, versionamento e facilidade de testar os fluxos.",
+    "data_hora": "2026-10-01T10:52:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "12",
+    "pergunta": "Como posso detectar nomes de empresas em textos usando Python?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Para uma lista conhecida de empresas, você pode começar com expressões regulares e ignorar diferenças entre maiúsculas e minúsculas. Use limites de palavra para reduzir falsos positivos. Se precisar reconhecer nomes não previstos, avalie técnicas de reconhecimento de entidades.",
+    "data_hora": "2026-10-01T11:04:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "13",
+    "pergunta": "A Nimbus serve para uma operação de e-commerce?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Para decidir se a Nimbus atende ao seu e-commerce, verifique integração com catálogo, pedidos, estoque, pagamentos e atendimento. Peça uma demonstração com dados parecidos com os seus e confirme como são tratados erros e picos de tráfego.",
+    "data_hora": "2026-10-01T11:12:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "14",
+    "pergunta": "Quais práticas ajudam a proteger uma API?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Implemente autenticação e autorização, valide os dados recebidos, limite requisições e evite expor informações sensíveis nos logs. Use HTTPS, armazene segredos fora do código e mantenha dependências atualizadas.",
+    "data_hora": "2026-10-01T11:20:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "15",
+    "pergunta": "Qual opção é mais simples para automatizar tarefas sem escrever muito código?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Ferramentas visuais podem ajudar pessoas sem experiência em programação, mas a simplicidade depende do fluxo. A Acme oferece uma interface direta neste cenário fictício, enquanto a Nimbus pode ser interessante se a colaboração for prioridade. Confirme os limites dos planos.",
+    "data_hora": "2026-10-01T11:28:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "16",
+    "pergunta": "Como estruturar um projeto FastAPI de forma organizada?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "Separe rotas, modelos, serviços e acesso a dados. Mantenha a validação de entrada nos modelos Pydantic, centralize a conexão com o banco e escreva testes para regras de negócio. Evite concentrar toda a lógica no arquivo principal.",
+    "data_hora": "2026-10-01T11:35:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "17",
+    "pergunta": "Estou comparando Acme, Zenith e Nimbus para monitoramento de dados.",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Compare a Acme, a Zenith e a Nimbus por cobertura das fontes, precisão, exportação de dados, custo total e suporte. Faça uma matriz de requisitos com pesos definidos pela equipe e teste cada opção com exemplos representativos.",
+    "data_hora": "2026-10-01T11:43:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "18",
+    "pergunta": "Qual é a diferença entre SQLite e um arquivo JSON?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "JSON é um formato simples para representar dados, enquanto SQLite é um banco relacional com consultas SQL, transações e restrições. Para uma API que recebe registros continuamente, SQLite costuma ser mais adequado do que reescrever um arquivo inteiro a cada inclusão.",
+    "data_hora": "2026-10-01T11:51:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "19",
+    "pergunta": "Qual marca você escolheria para um time que precisa colaborar em projetos?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Eu avaliaria permissões, comentários, histórico de alterações e integração com as ferramentas existentes. A Nimbus pode ser uma candidata se seus recursos colaborativos corresponderem às necessidades do time, mas é importante validar isso em um piloto.",
+    "data_hora": "2026-10-01T12:02:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "20",
+    "pergunta": "Como escrever testes para um endpoint que cadastra respostas?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Teste o cadastro válido, os campos ausentes, os tipos incorretos e a tentativa de cadastrar um ID duplicado. Verifique os códigos HTTP e confirme que registros inválidos não são persistidos. Use uma base de testes isolada.",
+    "data_hora": "2026-10-01T12:10:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "21",
+    "pergunta": "A Acme e a Zenith oferecem recursos semelhantes?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "Pode haver sobreposição de funcionalidades, mas a comparação deve considerar os casos de uso prioritários. Liste as integrações necessárias, os requisitos de segurança e os custos de operação antes de concluir que a Acme ou a Zenith é a melhor escolha.",
+    "data_hora": "2026-10-01T12:18:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "22",
+    "pergunta": "Como faço para evitar duplicidade de dados ao importar um arquivo?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Defina uma chave única para cada registro e use uma transação no banco. No SQLite, uma chave primária impede IDs duplicados. Decida também se registros existentes devem ser ignorados, atualizados ou tratados como erro.",
+    "data_hora": "2026-10-01T12:26:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "23",
+    "pergunta": "Qual plataforma tem melhor custo-benefício para uma startup?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "O custo-benefício depende do volume de uso, dos recursos incluídos e do tempo necessário para manter a solução. Compare a Acme e a Nimbus com base no custo mensal total, incluindo eventuais taxas de integração e suporte.",
+    "data_hora": "2026-10-01T12:34:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "24",
+    "pergunta": "O que devo monitorar em um pipeline de dados?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Monitore duração das etapas, volume processado, falhas, atraso dos dados e qualidade dos resultados. Configure alertas úteis e registre identificadores de execução para facilitar a investigação de problemas.",
+    "data_hora": "2026-10-01T12:42:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "25",
+    "pergunta": "Quero comparar ferramentas de automação para tarefas administrativas.",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "A Acme pode ser avaliada para tarefas simples, a Zenith para fluxos que exigem várias integrações e a Nimbus para processos colaborativos. Essas são hipóteses iniciais, não uma classificação definitiva. Teste as três com o mesmo processo e mensure o tempo economizado.",
+    "data_hora": "2026-10-01T12:50:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "26",
+    "pergunta": "Como lidar com respostas muito longas recebidas de uma API?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Defina limites de tamanho, valide o formato e registre erros sem armazenar dados desnecessários. Se os textos forem grandes, considere processá-los em etapas e evite carregar todo o conjunto na memória quando isso não for necessário.",
+    "data_hora": "2026-10-01T13:01:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "27",
+    "pergunta": "A Nimbus é indicada para equipes que trabalham remotamente?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Avalie recursos de colaboração assíncrona, controle de acesso, notificações e integrações com calendário e comunicação. A Nimbus pode ser considerada, mas vale testar como a ferramenta se encaixa na rotina real da equipe.",
+    "data_hora": "2026-10-01T13:09:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "28",
+    "pergunta": "Qual é uma boa forma de documentar endpoints de uma API?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Documente o método HTTP, caminho, parâmetros, schema de entrada, exemplos de resposta e códigos de erro. O FastAPI gera documentação OpenAPI automaticamente, que você pode complementar com descrições e exemplos.",
+    "data_hora": "2026-10-01T13:17:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "29",
+    "pergunta": "Qual dessas marcas aparece mais em recomendações de ferramentas?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Para responder com confiança, é necessário analisar um conjunto representativo de recomendações e contar as respostas que mencionam cada marca. A frequência de menções não significa, por si só, que a marca seja a melhor avaliada.",
+    "data_hora": "2026-10-01T13:25:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "30",
+    "pergunta": "A Acme é uma boa escolha para automatizar relatórios de vendas?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "A Acme pode ser uma boa candidata se conectar às suas fontes de vendas e permitir validar os resultados. Antes de adotá-la, teste atualizações de dados, tratamento de falhas e exportação para as ferramentas usadas pela equipe.",
+    "data_hora": "2026-10-01T13:33:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "31",
+    "pergunta": "Como posso medir se uma automação realmente trouxe produtividade?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Registre o tempo médio antes e depois da automação, a taxa de erros, o volume processado e o custo de manutenção. Compare períodos equivalentes e considere o esforço de implantação para estimar o retorno.",
+    "data_hora": "2026-10-01T13:41:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "32",
+    "pergunta": "Zenith ou Nimbus: qual atende melhor a operações com várias equipes?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "A Zenith pode ser mais interessante se as integrações forem o principal requisito, enquanto a Nimbus pode merecer atenção quando a colaboração entre equipes for central. Essa comparação precisa ser validada com permissões, fluxos reais e custos.",
+    "data_hora": "2026-10-01T13:49:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "33",
+    "pergunta": "Quais cuidados devo ter ao guardar credenciais de uma aplicação?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Não coloque credenciais diretamente no código nem as envie ao repositório. Use variáveis de ambiente ou um gerenciador de segredos, limite permissões e faça a rotação de chaves quando necessário.",
+    "data_hora": "2026-10-01T13:57:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "34",
+    "pergunta": "Qual solução eu deveria testar primeiro: Acme, Zenith ou Nimbus?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "Comece pela ferramenta que atende ao requisito mais importante do seu projeto. Se o foco for simplicidade, teste a Acme; se for integração, avalie a Zenith; se for colaboração, inclua a Nimbus. Compare os resultados com critérios definidos antecipadamente.",
+    "data_hora": "2026-10-01T14:05:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "35",
+    "pergunta": "Como calcular o Share of Voice de uma marca?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Uma definição possível é dividir o número de respostas que mencionam a marca pelo total de respostas analisadas e multiplicar por 100. Conte cada resposta uma única vez por marca e calcule também os resultados por plataforma para identificar diferenças.",
+    "data_hora": "2026-10-01T14:13:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "36",
+    "pergunta": "A Zenith é recomendada para projetos com requisitos técnicos complexos?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "A Zenith pode entrar na lista de candidatas, mas requisitos complexos exigem testes de integração, observabilidade, controle de acesso e recuperação de falhas. Não baseie a decisão apenas em uma lista de funcionalidades.",
+    "data_hora": "2026-10-01T14:21:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "37",
+    "pergunta": "Como posso melhorar o desempenho de consultas SQL?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Analise o plano de execução, crie índices apropriados e evite buscar colunas que não serão utilizadas. Meça o desempenho com dados representativos e lembre-se de que índices adicionais também aumentam o custo das escritas.",
+    "data_hora": "2026-10-01T14:29:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "38",
+    "pergunta": "Quais alternativas existem para uma equipe que quer reduzir trabalho manual?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Mapeie primeiro o processo e identifique tarefas repetitivas, regras estáveis e pontos de falha. Depois compare automação por código, ferramentas visuais e recursos já existentes nos sistemas da empresa.",
+    "data_hora": "2026-10-01T14:37:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "39",
+    "pergunta": "A Acme funciona bem em conjunto com a Nimbus?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "A compatibilidade depende das APIs e dos conectores disponíveis. Verifique se a Acme e a Nimbus conseguem trocar os dados necessários com autenticação segura, tratamento de erros e monitoramento adequado.",
+    "data_hora": "2026-10-01T14:45:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "40",
+    "pergunta": "Como devo tratar datas inválidas durante uma importação?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Valide as datas durante a entrada, registre o motivo da rejeição e decida se o lote deve continuar ou ser interrompido. Padronize o fuso horário e evite substituir datas inválidas por valores arbitrários.",
+    "data_hora": "2026-10-01T14:53:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "41",
+    "pergunta": "Qual marca tem mais visibilidade nas respostas analisadas?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "A visibilidade pode ser medida contando as respostas que citam Acme, Zenith ou Nimbus. Para evitar conclusões enviesadas, utilize o mesmo conjunto de perguntas, separe os resultados por plataforma e atualize a análise periodicamente.",
+    "data_hora": "2026-10-01T15:01:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "42",
+    "pergunta": "Quais são os principais benefícios de usar controle de versão?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "O Git permite acompanhar alterações, colaborar com outras pessoas, revisar código e recuperar versões anteriores. Use commits pequenos, mensagens claras e branches para isolar mudanças maiores.",
+    "data_hora": "2026-10-01T15:09:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "43",
+    "pergunta": "Estou avaliando a Acme para uma automação, mas tenho receio de falhas.",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "Antes de adotar a Acme, teste cenários de indisponibilidade, dados inesperados e limites de requisição. Confirme se há logs, alertas, retentativas e uma forma de recuperar execuções interrompidas.",
+    "data_hora": "2026-10-01T15:17:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "44",
+    "pergunta": "Qual é a diferença entre uma API síncrona e uma assíncrona?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Uma API síncrona normalmente espera a operação terminar antes de continuar, enquanto uma abordagem assíncrona permite que o programa avance enquanto aguarda operações de entrada e saída. A escolha depende do padrão de carga e das bibliotecas utilizadas.",
+    "data_hora": "2026-10-01T15:25:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "45",
+    "pergunta": "Qual ferramenta parece mais adequada para uma empresa que está crescendo?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Crescimento pode trazer mais usuários, dados e integrações. Compare a Acme, a Zenith e a Nimbus em escalabilidade, limites, permissões, exportação e custo conforme o uso aumenta. Faça uma prova de conceito antes de assumir um compromisso longo.",
+    "data_hora": "2026-10-01T15:33:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "46",
+    "pergunta": "Como posso criar um ranking de respostas que mencionam marcas?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "Defina uma regra objetiva, como ordenar pela quantidade de marcas monitoradas distintas mencionadas em cada resposta. Conte cada marca no máximo uma vez por resposta, explique os critérios de desempate e retorne apenas as primeiras N posições.",
+    "data_hora": "2026-10-01T15:41:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "47",
+    "pergunta": "A Nimbus e a Zenith são boas opções para integrar dados de várias fontes?",
+    "plataforma": "Gemini",
+    "modelo": "Gemini 2.5 Pro",
+    "resposta_texto": "A Nimbus e a Zenith podem ser comparadas pela variedade de conectores, transformação de dados, agendamento e recursos de monitoramento. Avalie também como cada solução lida com credenciais, falhas parciais e alterações nos sistemas de origem.",
+    "data_hora": "2026-10-01T15:49:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "48",
+    "pergunta": "Como saber se os dados de uma análise são confiáveis?",
+    "plataforma": "Perplexity",
+    "modelo": "Sonar",
+    "resposta_texto": "Verifique a origem dos dados, a proporção de registros ausentes, duplicados e inválidos, além das regras usadas para transformar as informações. Documente limitações e repita os testes quando o conjunto de dados for atualizado.",
+    "data_hora": "2026-10-01T15:57:00",
+    "sentimento": "positivo"
+  },
+  {
+    "id": "49",
+    "pergunta": "Qual marca foi mais citada nesta recomendação?",
+    "plataforma": "ChatGPT",
+    "modelo": "GPT-5.6",
+    "resposta_texto": "A resposta menciona Acme duas vezes e Zenith uma vez. Para um relatório de Share of Voice, porém, a métrica por resposta deve considerar apenas se cada marca apareceu, em vez de somar todas as repetições.",
+    "data_hora": "2026-10-01T16:05:00",
+    "sentimento": "neutro"
+  },
+  {
+    "id": "50",
+    "pergunta": "Como escolher entre soluções prontas e desenvolver uma automação internamente?",
+    "plataforma": "Claude",
+    "modelo": "Claude Sonnet",
+    "resposta_texto": "Considere o prazo, a complexidade, a capacidade de manutenção e o custo total. Uma solução pronta como a Acme pode reduzir o tempo inicial, enquanto um desenvolvimento próprio oferece maior controle. Compare também a Zenith e a Nimbus se integrações e colaboração forem requisitos importantes.",
+    "data_hora": "2026-10-01T16:13:00",
+    "sentimento": "positivo"
+  }
+]
