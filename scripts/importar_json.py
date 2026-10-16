@@ -10,7 +10,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 JSON_PATH = BASE_DIR / "data" / "respostas.json"
 DB_PATH = BASE_DIR / "data" / "respostas.db"
 REJEITADOS_PATH = BASE_DIR / "data" / "rejeitados.jsonl"
-VALIDOS_PATH = BASE_DIR / "data" / "respostas_validas.json"
 
 CAMPOS_OBRIGATORIOS = [
     "id",
@@ -22,6 +21,28 @@ CAMPOS_OBRIGATORIOS = [
 ]
 
 MAX_TEXTO = 100_000
+
+
+def to_iso(value: str) -> str:
+    formatos = [
+        "%d/%m/%Y",
+        "%Y/%m/%d",
+        "%Y-%m-%d",
+        "%Y-%m-%dT%H:%M:%S",
+    ]
+
+    value = value.strip()
+    for formato in formatos:
+        try:
+            data = datetime.strptime(value, formato)
+            return data.isoformat()
+        except ValueError:
+            continue
+
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).isoformat()
+    except ValueError as erro:
+        raise ValueError(f"Formato de data inválido: {value!r}") from erro
 
 
 def validar_resposta(item):
@@ -50,14 +71,14 @@ def validar_resposta(item):
         erros.append("Texto contém repetição excessiva de caracteres.")
 
     try:
-        datetime.fromisoformat(item["data_hora"].replace("Z", "+00:00"))
+        item["data_hora"] = to_iso(item["data_hora"])
     except ValueError:
         erros.append("Data e hora em formato inválido.")
 
     sentimento = item.get("sentimento")
 
-    if sentimento is not None and not isinstance(sentimento, str):
-        erros.append("Sentimento deve ser texto ou null.")
+    if sentimento is None or not isinstance(sentimento, str):
+        erros.append("Sentimento deve ser texto e não nulo.")
 
     return erros
 
@@ -90,7 +111,6 @@ def importar_dados():
 
     aceitos = 0
     rejeitados = []
-    respostas_validas = []
     ids_processados = set()
 
     with sqlite3.connect(DB_PATH) as conexao:
@@ -138,15 +158,8 @@ def importar_dados():
                     item.get("sentimento"),
                 ))
 
-                if cursor.rowcount == 0:
-                    rejeitados.append({
-                        "indice": indice,
-                        "id": identificador,
-                        "erros": ["ID já existente no banco."],
-                    })
-                else:
+                if cursor.rowcount > 0:
                     aceitos += 1
-                    respostas_validas.append(item)
 
             except sqlite3.Error as erro:
                 rejeitados.append({
@@ -161,15 +174,6 @@ def importar_dados():
             arquivo.write(
                 json.dumps(registro, ensure_ascii=False) + "\n"
             )
-
-    # Salva os arquivos válidos.
-    with open(VALIDOS_PATH, "w", encoding="utf-8") as arquivo:
-        json.dump(
-            respostas_validas,
-            arquivo,
-            ensure_ascii=False,
-            indent=4,
-        )
 
     print(f"Registros no arquivo: {len(dados)}")
     print(f"Novos registros importados: {aceitos}")

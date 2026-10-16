@@ -9,7 +9,7 @@ resposta.
 - `app/`: rotas HTTP e lógica de análise.
 - `models/`: validação dos dados de resposta.
 - `data/`: arquivos de origem, dados válidos e rejeitados, e banco SQLite.
-- `scripts/importar_json.py`: valida e importa respostas do JSON.
+- `scripts/importar_json.py`: valida e importa respostas do JSON para o banco SQLite.
 - `tests/`: testes da API e da análise.
 
 ## Preparar e executar
@@ -20,15 +20,14 @@ entrada (ou coloque seu próprio histórico em `data/respostas.json`):
 ```bash
 pip install -r requirements.txt
 pip install -r tests/requirements-test.txt
-cp data/respostas_exemplo.json data/respostas.json
 python scripts/importar_json.py
 python -m uvicorn app.routes:app --reload
 ```
 
 Execute os comandos a partir da raiz do repositório. A importação valida os
-registros, grava os aceitos em `data/respostas_validas.json` e `data/respostas.db`
-e registra os rejeitados em `data/rejeitados.jsonl`. A API lê e atualiza o
-arquivo de respostas válidas.
+registros, grava os aceitos em `data/respostas.db` e registra os rejeitados em
+`data/rejeitados.jsonl`. A API lê e atualiza as respostas diretamente no banco
+SQLite.
 
 ## Endpoints
 
@@ -46,5 +45,5 @@ pytest
 
 ## Próximos passos
 
-Com mais tempo, faria a API ler e gravar diretamente no SQLite, adicionaria
-configuração de ambientes e ampliaria os testes de integração e de dados sujos.
+Com mais tempo, adicionaria configuração de ambientes e ampliaria os testes de
+integração e de dados sujos.

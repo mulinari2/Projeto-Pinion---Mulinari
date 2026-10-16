@@ -9,7 +9,7 @@ class Resposta(BaseModel):
     modelo: str = Field(min_length=1)
     resposta_texto: str = Field(min_length=1)
     data_hora: datetime
-    sentimento: str | None = None
+    sentimento: str
 
     @field_validator(
         "id",
@@ -17,6 +17,7 @@ class Resposta(BaseModel):
         "plataforma",
         "modelo",
         "resposta_texto",
+        "sentimento",
     )
     @classmethod
     def validar_texto_nao_vazio(cls, valor: str) -> str:

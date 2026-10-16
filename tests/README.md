@@ -41,9 +41,6 @@ pytest tests/test_respostas.py -v
 
 ## Importante: banco de testes
 
-Os testes de `POST /respostas` criam registros com IDs iniciados em `pytest-`.
-Antes de executar, confirme que a aplicação está configurada para usar um banco de testes, ou configure uma fixture que substitua a dependência/conexão do banco por um SQLite temporário. Não execute testes de escrita contra dados de produção.
-
-## Ajustes esperados
-
-Este é um template porque o código real dos endpoints e seus contratos de resposta não foi incluído nesta conversa. As expectativas de status HTTP, especialmente para IDs duplicados, marcas desconhecidas e `n=0`, devem refletir as regras que sua API realmente implementa.
+O pytest cria um `respostas.db` temporário por teste a partir dos dados válidos
+de `data/respostas_exemplo.json`. O banco fica isolado do banco real e é
+removido automaticamente ao fim de cada teste.

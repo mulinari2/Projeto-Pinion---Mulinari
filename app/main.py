@@ -1,4 +1,4 @@
-import json
+import sqlite3
 from pathlib import Path
 import re
 from collections import Counter
@@ -6,15 +6,21 @@ from models.model_resposta import Resposta
 from fastapi import HTTPException
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-VALIDOS_PATH = BASE_DIR / "data" / "respostas_validas.json"
+DB_PATH = BASE_DIR / "data" / "respostas.db"
 
 # Marcas monitoradas (lista fixa) -> ["Acme", "Zenith", "Nimbus"]
 marcas_monitoradas = ["Acme", "Zenith", "Nimbus"]
 
-def carregar_respostas(arquivo: str | Path = VALIDOS_PATH) -> list[dict]:
-    with open(arquivo, "r", encoding="utf-8") as file:
-        return json.load(file)
-
+def carregar_respostas() -> list[dict]:
+    with sqlite3.connect(DB_PATH) as conexao:
+        conexao.row_factory = sqlite3.Row
+        registros = conexao.execute("""
+            SELECT id, pergunta, plataforma, modelo,
+                   resposta_texto, data_hora, sentimento
+            FROM respostas
+            ORDER BY rowid
+        """)
+        return [dict(registro) for registro in registros]
 
 def calcular_sov(respostas: list[dict], marcas: list[str]) -> dict:
     """Calcula o SOV geral e por plataforma para todas as marcas."""
@@ -108,29 +114,32 @@ def adicionar_resposta(respostas: list[dict], resposta: Resposta):
     # Converte o modelo Pydantic para um dicionário serializável
     nova_resposta = resposta.model_dump(mode="json")
 
-    # Adiciona a nova resposta e persiste no arquivo
-    respostas.append(nova_resposta)
+    try:
+        with sqlite3.connect(DB_PATH) as conexao:
+            conexao.execute("""
+                INSERT INTO respostas (
+                    id, pergunta, plataforma, modelo,
+                    resposta_texto, data_hora, sentimento
+                )
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (
+                nova_resposta["id"],
+                nova_resposta["pergunta"],
+                nova_resposta["plataforma"],
+                nova_resposta["modelo"],
+                nova_resposta["resposta_texto"],
+                nova_resposta["data_hora"],
+                nova_resposta["sentimento"],
+            ))
+    except sqlite3.IntegrityError as erro:
+        raise HTTPException(
+            status_code=409,
+            detail="Já existe uma resposta com esse ID.",
+        ) from erro
 
-    with open(VALIDOS_PATH, "w", encoding="utf-8") as arquivo:
-        json.dump(
-            respostas,
-            arquivo,
-            ensure_ascii=False,
-            indent=4,
-        )
+    respostas.append(nova_resposta)
 
     return {
         "mensagem": "Resposta adicionada com sucesso.",
         "resposta": nova_resposta,
     }
-
-if __name__ == "__main__":
-
-
-    respostas = carregar_respostas(VALIDOS_PATH)
-
-
-    print(calcular_sov(respostas = respostas, marcas = marcas_monitoradas))
-
-
-    print(buscar_top_citacoes(respostas = respostas, marcas = marcas_monitoradas, n = 3))
